@@ -1,0 +1,35 @@
+.card {
+  width: 20%;
+  float: left;
+  margin: 2%;
+  box-shadow: 5px 5px 20px gray;
+  transition: transform 0.3s ease;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card div li {
+  margin-bottom: 30px;
+}
+
+.card .text li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.card .text ul li:nth-child(2) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

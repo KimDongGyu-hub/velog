@@ -1,0 +1,11 @@
+.color {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(214, 214, 214);
+}
+
+.color.active {
+  background-color: #6548e9;
+}

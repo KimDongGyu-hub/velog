@@ -1,0 +1,114 @@
+* {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* 폼 스타일 */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px; /* 폼의 너비를 더 크게 설정 */
+  margin: 20px auto;
+  padding: 30px; /* 패딩을 더 크게 설정 */
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 15px; /* 입력 필드 패딩을 더 크게 설정 */
+  font-size: 18px; /* 텍스트 크기 증가 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+  height: 150px; /* 텍스트 영역 크기 증가 */
+  resize: none;
+}
+
+button {
+  padding: 15px; /* 버튼 패딩을 더 크게 설정 */
+  font-size: 18px; /* 버튼 텍스트 크기 증가 */
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 모달 스타일 */
+dialog {
+  padding: 30px; /* 모달 패딩을 더 크게 설정 */
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* 모달 최대 너비 증가 */
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+dialog h3 {
+  margin-bottom: 20px;
+  font-size: 22px; /* 모달 제목 크기 증가 */
+  color: #333;
+}
+
+dialog button {
+  padding: 15px; /* 닫기 버튼 크기 증가 */
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+dialog button:hover {
+  background-color: #c82333;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  form {
+    width: 95%; /* 작은 화면에서 폼이 거의 전체 너비를 차지하도록 설정 */
+  }
+
+  dialog {
+    width: 95%; /* 작은 화면에서 모달 창도 전체 너비에 가깝게 설정 */
+  }
+}
